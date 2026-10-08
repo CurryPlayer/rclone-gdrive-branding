@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Rclone Drive Sync - Application Home</title>
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --text: #202124;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --border: #dadce0;
+      --muted: #5f6368;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h1 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 0;
+      color: var(--text);
+    }
+    p, li {
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #e8f0fe;
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer a {
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Personal Utility</span>
+      <h1>Personal Rclone Drive Sync</h1>
+      <p>This is the application home page for a personal single-user integration using <a href="https://rclone.org/" target="_blank" rel="noopener noreferrer">rclone</a> to synchronize files between local storage and Google Drive.</p>
+    </header>
+
+    <div class="card">
+      <h2>About This Application</h2>
+      <p>This application is an individual, private instance of the open-source tool <code>rclone</code> configured to access Google Drive via a dedicated personal OAuth 2.0 client ID.</p>
+      <ul>
+        <li><strong>Purpose:</strong> Automated personal file backup, archiving, and synchronization.</li>
+        <li><strong>Target Audience:</strong> Single user / private personal use only. Not a commercial or multi-tenant service.</li>
+        <li><strong>Architecture:</strong> Runs strictly as a local command-line client on the owner's machine.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Data and Privacy</h2>
+      <p>This application does not collect, track, or share any personal user data. All access tokens and file contents remain entirely on the local system running rclone and Google Drive's official servers.</p>
+      <p>For complete details, please read our <a href="privacy.html">Privacy Policy</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="https://rclone.org/" target="_blank" rel="noopener noreferrer">Rclone Official Website</a></li>
+        <li><a href="https://rclone.org/drive/" target="_blank" rel="noopener noreferrer">Rclone Google Drive Documentation</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Personal Rclone Drive Sync &bull; <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
