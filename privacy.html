@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Personal Rclone Drive Sync</title>
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --text: #202124;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --border: #dadce0;
+      --muted: #5f6368;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h1 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 0;
+      color: var(--text);
+    }
+    p, li {
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #e8f0fe;
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer a {
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Legal & Privacy</span>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: October 5, 2026</p>
+      <p><a href="index.html">&larr; Back to Application Home</a></p>
+    </header>
+
+    <div class="card">
+      <h2>1. Overview</h2>
+      <p><strong>Personal Rclone Drive Sync</strong> is a private, personal project used exclusively by the application owner to synchronize and back up files between local workstations and Google Drive using the open-source software <a href="https://rclone.org/" target="_blank" rel="noopener noreferrer">rclone</a>. It is not offered as a commercial service or public web application.</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Data Collection and Transmission</h2>
+      <p>This application does not collect, log, aggregate, or transmit any user data or personal information to any third party, external server, or tracking platform:</p>
+      <ul>
+        <li><strong>No Telemetry or Analytics:</strong> There are no tracking scripts, cookies, analytics, or logging servers associated with this application.</li>
+        <li><strong>Direct Communication:</strong> All network communication occurs directly between the local machine running <code>rclone</code> and Google's official API servers.</li>
+        <li><strong>No Third-Party Sharing:</strong> No file contents, metadata, or Google account information are ever shared with or sold to third parties.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. OAuth Credentials and Token Storage</h2>
+      <p>When authenticating with Google via OAuth 2.0:</p>
+      <ul>
+        <li>Authentication tokens are issued directly from Google to the local <code>rclone</code> client.</li>
+        <li>Tokens are stored strictly on the local file system within the user's private configuration file (typically <code>~/.config/rclone/rclone.conf</code>).</li>
+        <li>Tokens are never uploaded to any remote host or external database.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Google User Data Access & Permissions</h2>
+      <p>The application requests access to Google Drive scopes solely to perform file operations explicitly requested by the user via the <code>rclone</code> command line (such as copying, moving, syncing, or deleting files in designated directories).</p>
+      <p>The application complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. Revocation of Access</h2>
+      <p>Access can be revoked at any time by the account owner by visiting Google's Third-party apps with account access page at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">https://myaccount.google.com/permissions</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>6. Contact Information</h2>
+      <p>If you have any questions regarding this privacy policy or application, please contact the repository owner via <a href="https://github.com/curryplayer" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Personal Rclone Drive Sync &bull; <a href="index.html">Application Home</a></p>
+    </footer>
+  </div>
+</body>
+</html>
